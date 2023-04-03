@@ -12,10 +12,6 @@ import DecoupledEditor from 'ckeditor5-custom-build/build/ckeditor';
 
 import { minuta } from './minuta';
 
-const editorConfiguration = {
-    toolbar: [ 'bold', 'italic' ]
-};
-
 class App extends Component {
   render() {
     return (
@@ -32,7 +28,7 @@ class App extends Component {
                   fontSize: {
                     options: [ 9, 10, 11, 12, 'default', 14, 15 ],
                     supportAllValues: true
-                  }
+                  },
                 }
               }
               editor={ DecoupledEditor }
